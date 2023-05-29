@@ -1,0 +1,19 @@
+<div class="product">
+    <div class="image">
+      <img src="{{product.image}}" alt="Product Image">
+    </div>
+    <div class="details">
+      <h2 class="title">{{product?.title}}</h2>
+      <p class="category">Category: {{product?.category}}</p>
+      <p class="description">{{product?.description}}</p>
+      <p class="price">Price: ${{product?.price}}</p>
+      <div class="rating">
+        <span class="rate">Rating: {{product?.rating?.rate}}</span>
+        <span class="count">({{product.rating.count}} reviews)</span>
+      </div>
+    </div>
+    <div class="back-btn">
+        <a class="btn" routerLink="/products">Back</a>
+    </div>
+  </div>
+  

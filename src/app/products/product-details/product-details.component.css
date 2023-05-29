@@ -1,0 +1,107 @@
+.product {
+  display: flex;
+  margin: 5% 5% 0% 0%;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  height: inherit;
+}
+.product .image {
+  width: 400px;
+  height: 450px;
+}
+.product .image img {
+  width: 100%;
+  height: 90%;
+}
+.product .details {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.product .details .title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.product .details .category {
+  font-size: 25px;
+  margin: 10px;
+}
+.product .details .description {
+  font-size: 18px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.product .details .price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+.product .details .rating {
+  font-size: 20px;
+  margin: 10px;
+}
+.product .details .rating .rate {
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgb(4, 35, 71);
+  padding: 10px 20px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  transition: 0.3;
+  margin: 15px;
+  cursor: pointer;
+}
+.btn--red {
+  background-color: red;
+}
+.btn:hover {
+  background-color: #01040f;
+}
+.btn--white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  max-width: 250px;
+  border: 1px solid #324FBE;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #324FBE;
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.btn--blue {
+  background-color: #346EF1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  max-width: 250px;
+  border: 1px solid #324FBE;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.back-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}/*# sourceMappingURL=product-details.component.css.map */

@@ -1,0 +1,174 @@
+
+.main {
+    position: relative;
+    background-color: #ffffff;
+    z-index: 100;
+    padding: 100px 50px 30px 50px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    &__top{
+      padding: 10px;
+      height: auto;
+      width: auto;
+   
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &__left{
+        flex-basis: 40%;
+        &--big{
+          font-family: 'Poppins', sans-serif;
+          font-size: 40px;
+          font-weight: 600;
+          padding: 10px;
+        }
+  
+        &--medium{
+          font-family: 'Poppins', sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          padding: 10px;
+        }
+  
+        &--normal{
+          font-family: 'Poppins', sans-serif;
+          font-size: 17px;
+          font-weight: 500;
+          padding: 10px;
+          color:rgba(0,0,0,0.6);
+        }
+  
+        &__btn{
+          display: flex;
+          flex-direction: row;
+        }
+    
+        &--red{
+          color: red;
+        }
+  
+        @media screen and (max-width: 1300px) {
+          flex-basis: 50%;
+        &--big{
+          padding: 0px;
+        }
+  
+        &--medium{
+          font-weight: 500;
+          padding: 0px;
+        }
+  
+        &--normal{
+          padding: 0px;
+          color:rgba(0,0,0,0.6);
+        }
+  
+        &__btn{
+          display: flex;
+          flex-direction: column;
+        }
+        }
+      }
+      
+      &__right{
+        flex-basis: 60%;
+        padding: 0px 20px 0px 20px;
+  
+        img{
+          height: 400px;
+          width: 700px;
+        }
+  
+        @media screen and (max-width: 1300px) {
+          flex-basis: 50%;
+          
+  
+          img{
+            height: 300px;
+            width: 500px;
+          }
+        }
+      }
+    }
+    &__down{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: auto;
+      padding:  100px 50px 50px 50px;
+      &__single {
+        flex-basis: 30%;
+        background-color: #737785;
+        color: white;
+        padding: 20px;
+      }
+      &__pic{
+        padding: 3%;
+        height: 200px;
+        width: 330px;
+      }
+      &__title{
+        text-transform: capitalize;
+        font-size: 20px;
+      }
+      &__text{
+        margin: 20px 0;
+        line-height:24px;
+      }
+    }
+  }
+  
+  
+  .btn{
+      display: inline-block;
+      background-color: rgb(4, 35, 71); // default button
+      padding: 10px 20px;
+      text-transform: capitalize;
+      color: white;
+      text-decoration: none;
+      transition: 0.3;
+      cursor: pointer;
+      
+      &--red{
+        background-color: red; // if I want to red button
+      }
+      &:hover{
+        background-color: #01040f;
+      }
+      &--white{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40px;
+        max-width: 250px;
+        border: 1px solid #324FBE;
+        border-radius: 4px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #324FBE;
+        text-align: center;
+        margin: 20px;
+        padding: 5px;
+        cursor: pointer;
+      }
+      &--blue{
+        background-color: #346EF1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40px;
+        max-width: 250px;
+        border: 1px solid #324FBE;
+        border-radius: 4px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        margin: 20px;
+        padding: 5px;
+        cursor: pointer;
+      }
+  }

@@ -1,0 +1,11 @@
+
+<div class="main">
+        <!-- <div class="main__single" *ngFor="let product of products"> -->
+        <div class="main__single" *ngFor="let product of products">
+          <img class="main__pic" src="{{product?.image}}" alt="pic">
+          <h2 class="main__title">{{product?.title}}</h2>
+          <p class="main__text">Product Category: {{product?.category | uppercase}}</p>
+          <p class="main__text">Product Price: ${{product?.price}}</p>
+          <a class="btn" style="margin-top: 20px;" [routerLink]="['detail', product?.id]">Read Detail</a>
+        </div>
+</div>
