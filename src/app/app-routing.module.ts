@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormComponent } from './form/form.component';
 import { FlagAPIComponent } from './flag-api/flag-api.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CountryAPIServiceService } from 'src/services/country-apiservice.service';
 
 const routes: Routes = [
   {
@@ -19,7 +20,10 @@ const routes: Routes = [
     loadChildren: ()=> import('./products/product.module').then(x => x.ProductModule)
   },
   {
-    path:'api', 
+    path:'all-countries', 
+    resolve:{
+      countries:CountryAPIServiceService
+    },  
     component:FlagAPIComponent
   },
   {

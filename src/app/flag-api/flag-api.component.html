@@ -1,1 +1,11 @@
-<p>flag-api works!</p>
+<div class="main" *ngFor="let country of countries">
+    <div class="main__img">
+        <img src="{{country.flag}}" alt="flag">
+    </div>
+    <div class="main__info">
+        <p>Name : {{country.name}}</p>
+        <p>Capital : {{country.capital}}</p>
+        <p>Population : {{country.population}}</p>
+        <p>Region : {{country.region}}</p>
+    </div>
+</div>

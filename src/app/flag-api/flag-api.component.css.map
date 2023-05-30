@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"flag-api.component.css"}
+{"version":3,"sources":["flag-api.component.scss","flag-api.component.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,aAAA;ACCJ;ADAI;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;ACER;ADDQ;EACI,aAAA;EACA,YAAA;ACGZ;ADAI;EACI,kBAAA;EACA,eAAA;ACER","file":"flag-api.component.css"}

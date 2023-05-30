@@ -7,7 +7,7 @@ import { ProductService } from './product.service';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductResolverService implements Resolve<productType>{
+export class ProductResolverService{
 
   resolve( route: ActivatedRouteSnapshot,state: RouterStateSnapshot
   ) : productType{
