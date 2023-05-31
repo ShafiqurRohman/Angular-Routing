@@ -1,1 +1,20 @@
-/*# sourceMappingURL=form.component.css.map */
+.main {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-top: 10%;
+  height: 80vh;
+}
+
+.example-form {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+td {
+  padding-right: 8px;
+}/*# sourceMappingURL=form.component.css.map */

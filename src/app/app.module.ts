@@ -8,6 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FlagAPIComponent } from './flag-api/flag-api.component';
 import { FormComponent } from './form/form.component';
 import { ProductModule } from './products/product.module';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { ProductModule } from './products/product.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ProductModule 
+    ProductModule ,
+    FormsModule, 
+    MatFormFieldModule, 
+    MatInputModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
